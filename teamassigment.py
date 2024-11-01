@@ -18,5 +18,7 @@ while True: #Starts loop to allow multiple guesses
     try:
         user_guess = int(input("Enter your guess: ")) # Promts user for there guess
         attempts +=1 #Increase the attempt counter
-
+        if user_guess == guess_number:
+                print (f"Hurray! you guessed the number {guess_number} in {attempts} attempts.")
+                break
 
