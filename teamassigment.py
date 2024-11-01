@@ -21,5 +21,8 @@ while True: #Starts loop to allow multiple guesses
         else:
             if user_guess < guess_number: # Checks if the guess is lower than the target number
                 print("Go higher, try again")
-            
+            else:
+                    print("Lower try again")
+        except ValueError:
+            print("Enter a valid number")
 
