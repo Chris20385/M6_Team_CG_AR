@@ -30,4 +30,5 @@ def guessing_game():
 while True:
     guessing_game()
     play_again = input("Do you wish to play again?") .strip() .lower() # Asks user if he wishes to play again
-
+    if play_again != "yes":
+        break
