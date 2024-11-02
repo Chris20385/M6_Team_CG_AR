@@ -23,12 +23,12 @@ def guessing_game():
                     print("Go higher, try again")
                 else:
                     print("Lower try again")
-        except ValueError:
+        except ValueError: # Handles where input is not a valid integer
             print("Enter a valid number")
 
 # Loop which allows user to play multiple rounds 
 while True:
     guessing_game()
     play_again = input("Do you wish to play again?") .strip() .lower() # Asks user if he wishes to play again
-    if play_again != "yes":
-        break
+    if play_again != "yes": # If the response is not yes
+        break # Exits the loop and ends the game
